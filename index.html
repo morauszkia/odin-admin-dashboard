@@ -10,36 +10,118 @@
 
     <body class="container">
         <aside class="sidebar">
-            <h2>Dashboard</h2>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+            <div class="title-div">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo">
+                    <title>view-dashboard</title>
+                    <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                </svg>
+                <h2 class="main-title">Dashboard</h2>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list menu-list">
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>home</title>
+                            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                        </svg>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>card-account-details</title>
+                            <path
+                                d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z" />
+                        </svg>
+                        <a href="#" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>email</title>
+                            <path
+                                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                        <a href="#" class="nav-link">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>history</title>
+                            <path
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
+                        <a href="#" class="nav-link">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>format-list-checks</title>
+                            <path
+                                d="M3,5H9V11H3V5M5,7V9H7V7H5M11,7H21V9H11V7M11,15H21V17H11V15M5,20L1.5,16.5L2.91,15.09L5,17.17L9.59,12.59L11,14L5,20Z" />
+                        </svg>
+                        <a href="#" class="nav-link">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                            <title>account-group</title>
+                            <path
+                                d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
+                        </svg>
+                        <a href="#" class="nav-link">Communities</a>
+                    </li class="nav-item">
                 </ul>
             </nav>
-            <ul class="settings-menu">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ul class="settings-menu menu-list">
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                        <title>cog</title>
+                        <path
+                            d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg>
+                    <a href="#" class="nav-link">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                        <title>message-question</title>
+                        <path
+                            d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M13 14H11V12H13V14M14.8 9C14.5 9.4 14.1 9.6 13.7 9.8C13.4 10 13.3 10.1 13.2 10.3C13 10.5 13 10.7 13 11H11C11 10.5 11.1 10.2 11.3 9.9C11.5 9.7 11.9 9.4 12.4 9.1C12.7 9 12.9 8.8 13 8.6C13.1 8.4 13.2 8.1 13.2 7.9C13.2 7.6 13.1 7.4 12.9 7.2C12.7 7 12.4 6.9 12.1 6.9C11.8 6.9 11.6 7 11.4 7.1C11.2 7.2 11.1 7.4 11.1 7.7H9.1C9.2 7 9.5 6.4 10 6C10.5 5.6 11.2 5.5 12.1 5.5C13 5.5 13.8 5.7 14.3 6.1C14.8 6.5 15.1 7.1 15.1 7.8C15.2 8.2 15.1 8.6 14.8 9Z" />
+                    </svg>
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+                        <title>shield-check</title>
+                        <path
+                            d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
+                    </svg>
+                    <a href="#" class="nav-link">Privacy</a>
+                </li>
             </ul>
         </aside>
         <header class="header">
             <div class="search-container">
-                <label for="search">MAG</label>
-                <input type="search" name="search" id="search">
+                <label for="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                        <title>magnify</title>
+                        <path
+                            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                </label>
+                <input type="search" name="search" id="search" class="search-field">
             </div>
             <div class="log-out-container">
-
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                    <title>bell-ring</title>
+                    <path
+                        d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                </svg>
+                <div class="user-info">
+                    <img src="assets/mantis-head.png" alt="mantis profile picture" class="user-img user-img--sm">
+                    <p>András (@mantis)</p>
+                </div>
             </div>
             <div class="greeting-container">
-                <img src="" alt="">
+                <img src="assets/mantis-head.png" alt="mantis profile picture" class="user-img user-img--lg">
                 <div class="greeting">
-                    <span>Hi there,</span>
-                    <span>András (@mantis)</span>
+                    <span class="greeting-hi">Hi there,</span>
+                    <span class="greeting-name">András (@mantis)</span>
                 </div>
             </div>
             <div class="btn-container">
@@ -59,9 +141,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -72,9 +154,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -85,9 +167,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -98,9 +180,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -111,9 +193,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -124,9 +206,9 @@
                                 Dolor, reprehenderit! Ab autem blanditiis tempore, fuga eligendi impedit totam aut quis.
                             </p>
                             <footer>
-                                <button>Favorite</button>
-                                <button>Preview</button>
-                                <button>Code</button>
+                                <button class="btn">Favorite</button>
+                                <button class="btn">Preview</button>
+                                <button class="btn">Code</button>
                             </footer>
                         </article>
                     </li>
@@ -186,7 +268,8 @@
                 </ul>
             </section>
         </main>
-        <footer class="footer">Created by <a href="https://github.com/morauszkia">mantis</a> for The Odin Project
+        <footer class="footer">Created by &nbsp;<a href="https://github.com/morauszkia">mantis</a>&nbsp;for The Odin
+            Project
         </footer>
     </body>
 
