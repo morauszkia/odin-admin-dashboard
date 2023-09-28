@@ -35,7 +35,6 @@ body {
   font-family: 'Montserrat';
   font-size: 1.6rem;
   color: var(--text-color);
-  transition: all 0.3s ease-in;
 }
 
 aside,
@@ -62,6 +61,8 @@ section {
   gap: 4.8rem;
 
   z-index: 100;
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .title-div {
@@ -113,12 +114,15 @@ section {
   background-color: var(--card-color);
 
   z-index: 100;
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .icon {
   height: 3.2rem;
   fill: var(--text-color);
   cursor: pointer;
+  transition: fill 0.3s ease-in;
 }
 
 .search-container {
@@ -132,9 +136,11 @@ section {
   padding: 0.5rem 2rem;
   border-radius: 100px;
   font: inherit;
+  color: inherit;
   outline: none;
   border: none;
   background-color: var(--background-color);
+  transition: background-color 0.3s ease-in;
 }
 
 .log-out-container {
@@ -151,6 +157,15 @@ section {
   padding: 0.8rem;
   border-radius: 100px;
   position: relative;
+}
+
+.icon--theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in;
 }
 
 .user-info {
@@ -218,6 +233,8 @@ section {
   border-radius: 100px;
   font: inherit;
   font-weight: bold;
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .projects-container {
@@ -227,6 +244,8 @@ section {
 
   background-color: var(--background-color);
   overflow-y: scroll;
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .section-title {
@@ -252,6 +271,8 @@ section {
   padding: 3.2rem 2.4rem;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .project-item.favorite {
@@ -281,10 +302,6 @@ section {
 
 .announcements {
   grid-column: 2 / span 1;
-}
-
-.announcements-list {
-  background-color: #fff;
 }
 
 .announcement {
@@ -341,6 +358,8 @@ section {
   font-size: 1.2rem;
 
   background-color: var(--background-color);
+
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .footer a {

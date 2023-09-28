@@ -9,21 +9,39 @@ const currentTheme = localStorage.getItem('theme')
   ? localStorage.getItem('theme')
   : defaultTheme;
 
+const showIcon = (selector) => {
+  const iconEl = document.getElementById(selector);
+  iconEl.style.opacity = 1;
+  iconEl.style.transform = 'translate(-50%, -50%) scale(1)';
+};
+
+const hideIcon = (selector) => {
+  const iconEl = document.getElementById(selector);
+  iconEl.style.opacity = 0;
+  iconEl.style.transform = 'translate(-50%, -50%) scale(0)';
+};
+
 if (currentTheme) {
   htmlEl.dataset.theme = currentTheme;
+  if (currentTheme === 'light') {
+    showIcon('icon-light');
+    hideIcon('icon-dark');
+  } else {
+    showIcon('icon-dark');
+    hideIcon('icon-light');
+  }
 }
 
 const toggleTheme = (theme) => {
-  console.log(theme);
   htmlEl.dataset.theme = theme;
   localStorage.setItem('theme', theme);
 
   if (theme === 'dark') {
-    lightIconEl.style.opacity = 0;
-    darkIconEl.style.opacity = 1;
+    showIcon('icon-dark');
+    hideIcon('icon-light');
   } else {
-    lightIconEl.style.opacity = 1;
-    darkIconEl.style.opacity = 0;
+    showIcon('icon-light');
+    hideIcon('icon-dark');
   }
 };
 
